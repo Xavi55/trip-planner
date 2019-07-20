@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TripPlanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='./index.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+    </ul>
+
+    <div id="map"></div>
+    <div id="box">
+        <textarea id="inputs" placeholder="Comma separated locations i.e New York NY, Newark NJ, [...]"></textarea>
+        <span id='go'>&#10148;</span>
+    </div>
+    <script src="./index.js"></script>
+    <script defer async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBhYP-ObIJ_uOrlUqtsAqZjKFYkymCi7U&callback=initMap">
+    </script>
+
+</body>
+</html>
